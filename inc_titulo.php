@@ -26,18 +26,18 @@ $usuario = $_SESSION["usuario"];
 
         <div class="container-fluid">
 
-            <div class="row bg-primary">
+            <div class="row bg-warning">
                 <div class="col-sm-12">
                     <br>
                 </div>
                 <div class="col-sm-2">
-                    <img src="capa/logo.jpg" alt="patro" style="width: 150px; height: 150px">
+                    <img src="capa/logo.png" alt="patro" style="width: 330px; height: 180px; margin-left: -70px;">
                 </div>
                 <div class="col-sm-5">
                     <h1> Top Filmes</h1>
                     <h4> Controle de Cadastro de Filmes </h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-5" style="display: flex; flex-direction: row-reverse;">
                     <h1>&nbsp;</h1>
                     <h4> Usuário: <?= $usuario ?> - <a href="logout.php" class="btn btn-warning"> Sair </a></h4>
                 </div>
