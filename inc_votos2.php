@@ -3,7 +3,6 @@ include 'inc_titulopg.php';
 include 'inc_menupg.php';
 ?>
 
-
 <div class="col-sm-9">
     <div class="row">
         <div class="col-sm-12">
@@ -24,8 +23,6 @@ include 'inc_menupg.php';
                
               echo '<h3>Erro email já cadastrado</h3>';
                          
-                         
-                  
              } else {
  
             $sql = "INSERT INTO votos (cod_filmes, nome, email)
@@ -40,10 +37,7 @@ include 'inc_menupg.php';
             if ($conn->query($sql) === TRUE) {
                 // obtém o id do registro inserido
                 $last_id = $conn->insert_id;
-                echo "<h3> Voto Comfirmado, Obrigado Pela Colaboração... </h3>";
-                 
-            
-                 
+                echo "<h3> Voto Confirmado, Obrigado Pela Colaboração... </h3>";
                           
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
