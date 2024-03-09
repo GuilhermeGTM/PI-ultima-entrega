@@ -14,12 +14,12 @@
 
         <div class="container-fluid">
 
-            <div class="row bg-primary">
+            <div class="row bg-primary" style="height: 210px; backgroud-color: #fbec5d;">
                 <div class="col-sm-12">
                     <br>
                 </div>
                 <div class="col-sm-4">
-                    <img src="capa/logo.jpg" alt="patro" style="width: 150px; height: 150px">
+                    <img src="capa/logo.png" alt="patro" style="width: 300px; height: 300px">
                 </div>
                 <div class="col-sm-8">
                     <br>
