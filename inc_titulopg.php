@@ -17,7 +17,7 @@
         </div>
             <div style="display: flex; flex-direction: row-reverse; margin-left: 76%;">
                 <h1>&nbsp;</h1>
-                <h4> Usuário: PI Senac</h4>
+                <h4 style="font-family: monospace;"> Usuário: PI Senac</h4>
                 <img src="./icones/icon-user.png" alt="a" style="width: 25px; height:25px; margin-top: 0.5em;">
             </div>
             <div style="margin-top: 3em; margin-left: -9em;">
