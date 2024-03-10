@@ -11,21 +11,19 @@
         <script src="bootstrap/bootstrap.js"></script>
     </head>
     <body>
-
-        <div class="container-fluid">
-
-            <div class="row bg-primary" style="height: 210px; backgroud-color: #fbec5d;">
-                <div class="col-sm-12">
-                    <br>
-                </div>
-                <div class="col-sm-4">
-                    <img src="capa/logo.png" alt="patro" style="width: 300px; height: 300px">
-                </div>
-                <div class="col-sm-8">
-                    <br>
-                    <h1> Top Filmes </h1>
-                </div>
-                <div class="col-sm-12">
-                    <br>
-                </div>
+    <div>
+        <div style=" padding: 50px; text-align: center; background: #242F49; margin-top: -3em; display: flex; color: white">
+        <div style="display: flex; align-items: flex-end;">
+            <img src="./icones/Movie Projector.png" alt="" style="width:4em">
+            <img src="./icones/Film Reel.png" alt="" style="width:4em">
+        </div>
+            <div style="display: flex; flex-direction: row-reverse; margin-left: 76%;">
+                <h1>&nbsp;</h1>
+                <h4> Usuário: PI Senac</h4>
+                <img src="./icones/icon-user.png" alt="a" style="width: 25px; height:25px; margin-top: 0.5em;">
             </div>
+            <div style="margin-top: 3em; margin-left: -9em;">
+              <a href="logout.php" style="margin-left: 1em;" class="btn btn-danger"> Sair </a>
+            </div>
+            
+        </div>

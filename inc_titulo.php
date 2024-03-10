@@ -23,25 +23,15 @@ $usuario = $_SESSION["usuario"];
         <script src="bootstrap/bootstrap.js"></script>
     </head>
     <body>
-
-        <div class="container-fluid">
-
-            <div class="row bg-warning">
-                <div class="col-sm-12">
-                    <br>
-                </div>
-                <div class="col-sm-2">
-                    <img src="capa/logo.png" alt="patro" style="width: 330px; height: 180px; margin-left: -70px;">
-                </div>
-                <div class="col-sm-5">
-                    <h1> Top Filmes</h1>
-                    <h4> Controle de Cadastro de Filmes </h4>
-                </div>
-                <div class="col-sm-5" style="display: flex; flex-direction: row-reverse;">
-                    <h1>&nbsp;</h1>
-                    <h4> Usuário: <?= $usuario ?> - <a href="logout.php" class="btn btn-warning"> Sair </a></h4>
-                </div>
-                <div class="col-sm-12">
-                    <br>
-                </div>
+    <div>
+        <div style=" padding: 50px; text-align: center; background: #242F49; margin-top: -3em; display: flex; color: white">
+        <div style="display: flex; align-items: flex-end;">
+            <img src="./icones/Movie Projector.png" alt="" style="width:4em">
+            <img src="./icones/Film Reel.png" alt="" style="width:4em">
+        </div>
+            <div style="display: flex; flex-direction: row-reverse; margin-left: 55%;">
+                <h1>&nbsp;</h1>
+                <h4> Usuário: <?= $usuario ?><a href="logout.php" style="margin-left: 1em;" class="btn btn-warning"> Sair </a></h4>
+                <img src="./icones/icon-user.png" alt="a" style="width: 25px; height:25px; margin-top: 1em;">
             </div>
+        </div>
