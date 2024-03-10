@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="bootstrap/bootstrap.css">
         <script src="bootstrap/jquery.js"></script>
         <script src="bootstrap/bootstrap.js"></script>
-    </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+   </head>
     <body>
 
         <div class="container-fluid">
