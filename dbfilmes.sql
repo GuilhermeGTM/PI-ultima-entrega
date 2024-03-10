@@ -31,19 +31,21 @@ CREATE TABLE `filmes` (
   `id` int(4) NOT NULL,
   `nome` varchar(50) NOT NULL,
   `genero` varchar(32) NOT NULL,
-  `sinopse`	varchar(10000) NULL
+  `sinopse`	varchar(10000) NULL,
+  `nota` float null
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Despejando dados para a tabela `filmes`
 --
 
-INSERT INTO `filmes` (`id`, `nome`, `genero`,`nota`) VALUES
-(22, 'Senhor das Armas', 'Guerra, Drama', 4.1),
-(21, 'Bastardos Inglorious ', 'Guerra, Ação', 4.6),
-(20, 'Avatar', 'Ação, Ficção cientifica',4.86),
-(23, 'Infiltrado', 'Ação, Suspense ', 4.9),
-(24, 'Jogos Vorazes', 'Ação, Aventura', 4.3);
+INSERT INTO `filmes` (`id`, `nome`, `genero`,`nota`,`sinopse`) VALUES
+(22, 'Senhor das Armas', 'Guerra, Drama', 4.1,'Um agente incorruptível da Interpol persegue um negociante de armas chamado Yuri Orlov, que ficou milionário se aproveitando do fim da Guerra Fria, do colapso da União Soviética e do crescimento do terrorismo internacional para fazer negócios em todas as partes do mundo.'),
+(21, 'Bastardos Inglorious ', 'Guerra, Ação', 4.6,'Durante a Segunda Guerra Mundial, na França, judeus americanos espalham o terror entre o terceiro Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos nazistas, planeja vingança quando um evento em seu cinema reunirá os líderes do partido.'),
+(20, 'Avatar', 'Ação, Ficção cientifica',4.86,'No exuberante mundo alienígena de Pandora vivem os Navi, seres que parecem ser primitivos, mas são altamente evoluídos. Como o ambiente do planeta é tóxico, foram criados os avatares, corpos biológicos controlados pela mente humana que se movimentam livremente em Pandora. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Navi. Esta paixão leva Jake a lutar pela sobrevivência de Pandora.'),
+(23, 'Infiltrado', 'Ação, Suspense ', 4.9,'Harry, conhecido apenas como H, é um homem misterioso que trabalha para uma empresa de carros-fortes e movimenta grandes quantias de dinheiro pela cidade de Los Angeles. Quando, ao impedir um assalto, ele surpreende a todos com suas habilidades de combate, suas verdadeiras intenções começam a ser questionadas e um plano maior é revelado.'),
+(24, 'Jogos Vorazes', 'Ação, Aventura', 4.3,'Na região antigamente conhecida como América do Norte, a Capital de Panem controla 12 distritos e os força a escolher um garoto e uma garota, conhecidos como tributos, para competir em um evento anual televisionado. Todos os cidadãos assistem aos temidos jogos, no qual os jovens lutam até a morte, de modo que apenas um saia vitorioso. A jovem Katniss Everdeen, do Distrito 12, confia na habilidade de caça e na destreza com o arco, além dos instintos aguçados, nesta competição mortal.');
+
 
 -- --------------------------------------------------------
 
@@ -141,14 +143,13 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `votos`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-ALTER TABLE `filmes`
-  ADD `nota` FLOAT
+
 
 
 

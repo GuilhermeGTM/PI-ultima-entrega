@@ -9,9 +9,8 @@ include 'inc_conecta.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="bootstrap/votos.css" rel="stylesheet">
-    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    
 </head>
     <body>
 
@@ -36,8 +35,12 @@ include 'inc_conecta.php';
         // Obtém os detalhes do filme
         $filme = $result->fetch_assoc();
         // Exibe as informações do filme na tela
+        ?>
+         <div>
+        <?php
         
-        echo "<h2>" . $filme['nome'] . "</h2>";
+        echo '<strong class= "titulo">' . $filme["nome"] . '</strong>';  ?> </div> <?php
+
         echo "<p><strong>Gênero:</strong> " . $filme['genero'] . "</p>";
         echo "<td> <img src='figuras/$idfilme.jpg' style='width: 200px; height: 300px; float: left' > </td>";
         ?>
@@ -54,10 +57,7 @@ include 'inc_conecta.php';
     // Se nenhum ID de filme foi fornecido na URL, exibe uma mensagem de erro
     echo "ID do filme não fornecido.";
 }
-
                         ?>
-       
-        
         <!-- enctype="multipart/form-data" permite ao form enviar arquivos -->
  
         <form role="form" method="post" action="inc_votos2.php" enctype="multipart/form-data">
