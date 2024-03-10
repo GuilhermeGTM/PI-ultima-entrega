@@ -8,7 +8,7 @@ include 'inc_conecta.php';
 
 <div class="col-sm-9">
     <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-9">
             <h2> Vote no Filme </h2>
         </div>
         <div class="col-sm-2">
