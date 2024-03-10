@@ -1,12 +1,11 @@
 <?php
 include 'inc_titulopg.php';
-include 'inc_menupg.php';
 include 'inc_conecta.php';
 
 ?>
 
 
-<div class="col-sm-9">
+<div class="col-sm-12">
     <div class="row">
         <div class="col-sm-9">
             <h2> Vote no Filme </h2>
@@ -20,10 +19,10 @@ include 'inc_conecta.php';
                 <thead>
                     <tr>
                         
-                        <th> Nome do Filme </th>
-                        <th> Genero </th>
-                        <th> Nota </th>
-                        <th> Foto </th>
+                        <th class="col-1 col-md-1"> Nome do Filme </th>
+                        <th class="col-1"> Genero </th>
+                        <th class="col-1"> Nota </th>
+                        <th class="col-1"> Foto </th>
                                                
                     </tr>
                 </thead>
@@ -53,8 +52,8 @@ include 'inc_conecta.php';
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
                             echo "<td> <i style='color:#EEA236; padding:1rem'class='bi bi-star-fill'></i>". $row["nota"] . "</td>";
-                            echo "<td> <img src='figuras/$id.jpg' style='width: 200px; height: 200px'> </td>";
-                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger' role='button'> Votar </a>
+                            echo "<td> <img src='figuras/$id.jpg' style='width: 20%; height: 20%'> </td>";
+                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger btn-lg' role='button'> Votar </a>
                           </td></tr>";
                         }
                     } else {
