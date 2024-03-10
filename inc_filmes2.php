@@ -11,6 +11,7 @@ include 'inc_menu.php';
         // obtém os campos do formulário 
         $nome = $_POST["nome"];
         $genero = $_POST["genero"];
+        $sinopse = $_POST["Sinopse"];
         $imagem = $_FILES["imagem"]["name"];
         $imagem_tmp = $_FILES["imagem"]["tmp_name"];
         
@@ -18,12 +19,13 @@ include 'inc_menu.php';
         // exibe as informações do produto
         echo "<h3> Nome: $nome </h3>";
         echo "<h3> Genero: $genero </h3>";
+        echo "<h3> Sinopse: $sinopse </h3>";
         echo "<h3> Foto: $imagem </h3>";
         
         include 'inc_conecta.php';
 
-        $sql = "INSERT INTO filmes(nome, genero)
-                VALUES ('$nome', '$genero')";
+        $sql = "INSERT INTO filmes(nome, genero, sinopse)
+                VALUES ('$nome', '$genero', '$sinopse')";
 
         if ($conn->query($sql) === TRUE) {
             // obtém o id do ultimo registro inserido

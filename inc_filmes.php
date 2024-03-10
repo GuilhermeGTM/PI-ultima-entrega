@@ -23,7 +23,13 @@ include 'inc_menu.php';
                     <input type="text" class="form-control" id="genero" name="genero" required>
                 </div>
             </div>
-
+            
+            <div class="col-sm-6">    
+                <div class="form-group">
+                    <label for="Sinopse">Sinopse:</label>
+                    <textarea type="text" class="form-control" id="Sinopse" name="Sinopse" required></textarea>
+                </div>
+            </div>
             
             <div class="col-sm-12">    
                 <div class="form-group">
