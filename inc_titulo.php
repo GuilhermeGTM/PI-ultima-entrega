@@ -29,9 +29,12 @@ $usuario = $_SESSION["usuario"];
             <img src="./icones/Movie Projector.png" alt="" style="width:4em">
             <img src="./icones/Film Reel.png" alt="" style="width:4em">
         </div>
-            <div style="display: flex; flex-direction: row-reverse; margin-left: 55%;">
+        <div style="display: flex; flex-direction: row-reverse; margin-left: 76%;">
                 <h1>&nbsp;</h1>
-                <h4> Usuário: <?= $usuario ?><a href="logout.php" style="margin-left: 1em;" class="btn btn-warning"> Sair </a></h4>
-                <img src="./icones/icon-user.png" alt="a" style="width: 25px; height:25px; margin-top: 1em;">
+                <h4 style="font-family: monospace;"> Usuário: PI Senac</h4>
+                <img src="./icones/icon-user.png" alt="a" style="width: 25px; height:25px; margin-top: 0.5em;">
+            </div>
+            <div style="margin-top: 3em; margin-left: -9em;">
+              <a href="logout.php" style="margin-left: 1em;" class="btn btn-danger"> Sair </a>
             </div>
         </div>

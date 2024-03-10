@@ -30,7 +30,7 @@ if ($result->num_rows == 1) {
     $_SESSION["logado"] = 1;
     
     // carrega a página principal da área restrita
-    header("location: index.php");
+    header("location: cad_filmes.php");
     
     
 } else {
