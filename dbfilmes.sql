@@ -84,18 +84,18 @@ CREATE TABLE `votos` (
 -- Despejando dados para a tabela `votos`
 --
 
-INSERT INTO `votos` (`id`, `cod_filmes`, `nome`, `email`, `data`) VALUES
-(32, 15, 'guilherme', 'guilherme-gtm@hotmail.com', '0000-00-00'),
-(33, 14, 'pedro', 'pedro@hotmail.com', '0000-00-00'),
-(34, 15, 'laura', 'laura@hotmail.com', '0000-00-00'),
-(35, 16, 'joao', 'joao@hotmail.com', '0000-00-00'),
-(36, 20, 'Guilherme', 'guilherme@hotmail.com', '0000-00-00'),
-(37, 22, 'Gustavo', 'gustavo@hotmail.com', '0000-00-00'),
-(38, 24, 'Michela', 'michela@hotmail.com', '0000-00-00'),
-(39, 20, 'teste1', 'teste1@hotmail.com', '0000-00-00'),
-(40, 20, 'teste2', 'teste2@hotmail.com', '0000-00-00'),
-(41, 22, 'teste3', 'teste3@hotmail.com', '0000-00-00'),
-(42, 25, 'teste4', 'teste4@hotmail.com', '0000-00-00');
+INSERT INTO `votos` (`id`, `cod_filmes`, `nome`, `email`, `data`, `votos_pessoa`) VALUES
+(32, 15, 'guilherme', 'guilherme-gtm@hotmail.com', '0000-00-00',1),
+(33, 14, 'pedro', 'pedro@hotmail.com', '0000-00-00',1),
+(34, 15, 'laura', 'laura@hotmail.com', '0000-00-00',1),
+(35, 16, 'joao', 'joao@hotmail.com', '0000-00-00',1),
+(36, 20, 'Guilherme', 'guilherme@hotmail.com', '0000-00-00',1),
+(37, 22, 'Gustavo', 'gustavo@hotmail.com', '0000-00-00',1),
+(38, 24, 'Michela', 'michela@hotmail.com', '0000-00-00',1),
+(39, 20, 'teste1', 'teste1@hotmail.com', '0000-00-00',1),
+(40, 20, 'teste2', 'teste2@hotmail.com', '0000-00-00',1),
+(41, 22, 'teste3', 'teste3@hotmail.com', '0000-00-00',1),
+(42, 25, 'teste4', 'teste4@hotmail.com', '0000-00-00',1);
 
 --
 -- Índices para tabelas despejadas
@@ -149,3 +149,7 @@ COMMIT;
 
 ALTER TABLE `filmes`
   ADD `nota` FLOAT
+
+
+
+

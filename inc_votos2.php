@@ -15,16 +15,7 @@ include 'inc_menupg.php';
             include 'inc_conecta.php';
              
              
-            $sql = "SELECT * FROM votos where email='$email'";
-             
-               $result = $conn->query($sql);
-             
-             if($result->num_rows > 0) {
-               
-              echo '<h3>Erro email já cadastrado</h3>';
-                         
-             } else {
- 
+          
             $sql = "INSERT INTO votos (cod_filmes, nome, email)
                  VALUES ('$idC', '$nome', '$email')";
                 
@@ -38,12 +29,17 @@ include 'inc_menupg.php';
                 // obtém o id do registro inserido
                 $last_id = $conn->insert_id;
                 echo "<h3> Voto Confirmado, Obrigado Pela Colaboração... </h3>";
+                $votosUser = "SELECT COUNT(*) c FROM votos WHERE email='$email'";
+                $result = $conn->query($votosUser);
+
+                $rows = $result->fetch_all();
+                $votos = $rows[0][0];
+                echo "<h4> Você tem <span class='text-info'> $votos </span> votos<h4>";
                           
             } else {
                 echo "Erro: " . $sql . "<br>" . $conn->error;
             }
  
-             }
              
             $conn->close();
              
