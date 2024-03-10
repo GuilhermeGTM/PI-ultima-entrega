@@ -30,7 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `filmes` (
   `id` int(4) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `genero` varchar(32) NOT NULL
+  `genero` varchar(32) NOT NULL,
+  `sinopse`	varchar(10000) NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
