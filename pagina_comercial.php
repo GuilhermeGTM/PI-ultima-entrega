@@ -11,8 +11,8 @@ include 'inc_conecta.php';
         <div class="col-sm-9">
             <h2> Vote no Filme </h2>
         </div>
-        <div class="col-sm-2">
-            <h2> <a href="inc_grafico.php" class="btn btn-info btn-block" role="button"> Resultado </a> </h2>
+        <div class="col-sm-2" style="margin-left: 8%;">
+            <h2> <a href="inc_grafico.php" class="btn btn-danger btn-block" role="button"> Resultado </a> </h2>
         </div>
         <div class="col-sm-12">
             <table class="table table-striped">
@@ -51,7 +51,7 @@ include 'inc_conecta.php';
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
                             echo "<td> <img src='figuras/$id.jpg' style='width: 200px; height: 200px'> </td>";
-                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-warning' role='button'> Votar </a>
+                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger' role='button'> Votar </a>
                           </td></tr>";
                         }
                     } else {
