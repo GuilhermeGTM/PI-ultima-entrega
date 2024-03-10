@@ -1,0 +1,11 @@
+p {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .elemento {
+    max-width: 500px; /* Defina o valor máximo que você deseja para a largura */
+    word-wrap: break-word; /* Garante que as palavras sejam quebradas se não houver espaço suficiente */
+    margin: auto;
+    line-height: 2;
+  }

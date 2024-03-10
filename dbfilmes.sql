@@ -30,19 +30,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `filmes` (
   `id` int(4) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `genero` varchar(32) NOT NULL
+  `genero` varchar(32) NOT NULL,
+  `sinopse`	varchar(10000) NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Despejando dados para a tabela `filmes`
 --
 
-INSERT INTO `filmes` (`id`, `nome`, `genero`) VALUES
-(22, 'Senhor das Armas', 'Guerra, Drama'),
-(21, 'Bastardos Inglorious ', 'Guerra, Ação'),
-(20, 'Avatar', 'Ação, Ficção cientifica'),
-(23, 'Infiltrado', 'Ação, Suspense '),
-(24, 'Jogos Vorazes', 'Ação, Aventura');
+INSERT INTO `filmes` (`id`, `nome`, `genero`,`nota`) VALUES
+(22, 'Senhor das Armas', 'Guerra, Drama', 4.1),
+(21, 'Bastardos Inglorious ', 'Guerra, Ação', 4.6),
+(20, 'Avatar', 'Ação, Ficção cientifica',4.86),
+(23, 'Infiltrado', 'Ação, Suspense ', 4.9),
+(24, 'Jogos Vorazes', 'Ação, Aventura', 4.3);
 
 -- --------------------------------------------------------
 
@@ -145,3 +146,10 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+ALTER TABLE `filmes`
+  ADD `nota` FLOAT
+
+
+
+

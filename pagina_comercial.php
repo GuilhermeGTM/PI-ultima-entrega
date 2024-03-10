@@ -22,6 +22,7 @@ include 'inc_conecta.php';
                         
                         <th> Nome do Filme </th>
                         <th> Genero </th>
+                        <th> Nota </th>
                         <th> Foto </th>
                                                
                     </tr>
@@ -31,7 +32,7 @@ include 'inc_conecta.php';
                     include 'inc_conecta.php';
 
 // variável contendo comando para recuperar os registros cadastrados no banco de dados
-                    $sql = "SELECT id, nome, genero FROM filmes ORDER BY id";
+                    $sql = "SELECT id, nome, genero, nota FROM filmes ORDER BY id";
 // executa a instrução SQL
                     $result = $conn->query($sql);
 
@@ -46,10 +47,12 @@ include 'inc_conecta.php';
                             $id = $row['id'];
                             $nome = $row['nome'];
                             $clube = $row['genero'];
+                            $nota = $row['nota'];
                             
                            
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
+                            echo "<td> <i style='color:#EEA236; padding:1rem'class='bi bi-star-fill'></i>". $row["nota"] . "</td>";
                             echo "<td> <img src='figuras/$id.jpg' style='width: 200px; height: 200px'> </td>";
                             echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger' role='button'> Votar </a>
                           </td></tr>";
