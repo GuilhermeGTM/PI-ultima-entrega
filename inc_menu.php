@@ -1,5 +1,4 @@
-  <div class="row">
-    <div class="col-sm-3">
+    <div class="bg-info col-sm-2">
         <h2 class="bg-info text-center"> Menu </h2> 
         <ul class="nav navbar-sidebar">
         <li class="active"><a href="index.php">Página Principal</a></li>

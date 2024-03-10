@@ -5,11 +5,11 @@ include 'inc_menu.php';
 
 <div class="col-sm-9">
     <div class="row">
-        <div class="col-sm-10">
+        <div class="col-sm-9">
             <h2> Cadastro de Filmes </h2>
         </div>
-        <div class="col-sm-2">
-            <h2> <a href="inc_filmes.php" class="btn btn-info btn-block" role="button"> Novo </a> </h2>
+        <div class="col-sm-2" style="margin-left: 8%;">
+            <h2> <a href="inc_filmes.php" class="btn btn-danger btn-block" role="button"> Adicionar Filme </a> </h2>
         </div>
         <div class="col-sm-12">
             <table class="table table-striped">
@@ -48,7 +48,7 @@ include 'inc_menu.php';
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
                             echo "<td> <img src='figuras/$id.jpg' style='width: 200px; height: 150px'> </td>";
-                            echo "<td><a href='exc_filmes.php?id=$id' onclick='return confirm(\"Confirma Exclusão de $nome?\")' class='btn btn-warning' role='button'> Excluir </a>
+                            echo "<td><a href='exc_filmes.php?id=$id' onclick='return confirm(\"Confirma Exclusão de $nome?\")' class='btn btn-danger' role='button'> Excluir </a>
                           </td></tr>";
                         }
                     } else {

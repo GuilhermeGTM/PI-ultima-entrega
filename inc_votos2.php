@@ -28,7 +28,7 @@ include 'inc_menupg.php';
             if ($conn->query($sql) === TRUE) {
                 // obtém o id do registro inserido
                 $last_id = $conn->insert_id;
-                echo "<h3 class='text-primary'> Voto Confirmado, Obrigado Pela Colaboração... </h3>";
+                echo "<h3> Voto Confirmado, Obrigado Pela Colaboração... </h3>";
                 $votosUser = "SELECT COUNT(*) c FROM votos WHERE email='$email'";
                 $result = $conn->query($votosUser);
 
@@ -36,7 +36,7 @@ include 'inc_menupg.php';
                 $votos = $rows[0][0];
                 echo "<h4 class='fs-1'> Você tem <span class='text-info fs-2'> $votos </span> votos<h4>";
                 if ($votos >= 50) {
-                    echo "<button type='submit' id='ingresso' class='btn btn-info btn-lg aria-pressed='true' btn-block'>Trocar pontos por ingresso</button>";
+                    echo "<button type='submit' id='ingresso' class='btn btn-danger btn-lg aria-pressed='true' btn-block'>Trocar pontos por ingresso</button>";
                     echo "
                     <script>
                 let btn_ticket = document.getElementById('ingresso');
