@@ -13,20 +13,20 @@ include 'inc_conecta.php';
         <div class="col-sm-2" style="margin-left: 8%;">
             <h2> <a href="inc_grafico.php" class="btn btn-danger btn-block" role="button"> Resultado </a> </h2>
         </div>
-        <div class="col-sm-12">
-            <table class="table table-striped">
+        <div class="container-fluid">
+            <table class="table w-auto">
                 
                 <thead>
                     <tr>
                         
-                        <th class="col-1 col-md-1"> Nome do Filme </th>
-                        <th class="col-1"> Genero </th>
-                        <th class="col-1"> Nota </th>
-                        <th class="col-1"> Foto </th>
+                        <th class="text-center"> Nome do Filme </th>
+                        <th class="text-center"> Genero </th>
+                        <th class="text-center"> Nota </th>
+                        <th class="text-center"> Foto </th>
                                                
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-center">
                     <?php
                     include 'inc_conecta.php';
 
@@ -52,7 +52,7 @@ include 'inc_conecta.php';
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
                             echo "<td> <i style='color:#EEA236; padding:1rem'class='bi bi-star-fill'></i>". $row["nota"] . "</td>";
-                            echo "<td> <img src='figuras/$id.jpg' style='width: 20%; height: 20%'> </td>";
+                            echo "<td > <img src='figuras/$id.jpg' style='width: 25%; height: 25%'> </td>";
                             echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger btn-lg' role='button'> Votar </a>
                           </td></tr>";
                         }
