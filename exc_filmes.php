@@ -1,6 +1,6 @@
 <?php
 include 'inc_titulo.php';
-include 'inc_menu.php';
+
 
 // obtém o id do registro a ser excluído
 $id = $_GET["id"];
