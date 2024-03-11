@@ -1,11 +1,12 @@
 <?php
 include 'inc_titulopg.php';
+include 'inc_menupg.php';
 include 'inc_conecta.php';
 
 ?>
 
 
-<div class="col-sm-12">
+<div class="col-sm-9">
     <div class="row">
         <div class="col-sm-9">
             <h2> Vote no Filme </h2>
@@ -13,20 +14,20 @@ include 'inc_conecta.php';
         <div class="col-sm-2" style="margin-left: 8%;">
             <h2> <a href="inc_grafico.php" class="btn btn-danger btn-block" role="button"> Resultado </a> </h2>
         </div>
-        <div class="container-fluid">
-            <table class="table w-auto">
+        <div class="col-sm-12">
+            <table class="table table-striped">
                 
                 <thead>
                     <tr>
                         
-                        <th class="text-center"> Nome do Filme </th>
-                        <th class="text-center"> Genero </th>
-                        <th class="text-center"> Nota </th>
-                        <th class="text-center"> Foto </th>
+                        <th> Nome do Filme </th>
+                        <th> Genero </th>
+                        <th> Nota </th>
+                        <th> Foto </th>
                                                
                     </tr>
                 </thead>
-                <tbody class="text-center">
+                <tbody>
                     <?php
                     include 'inc_conecta.php';
 
@@ -52,8 +53,8 @@ include 'inc_conecta.php';
                             echo "<td>" . $row['nome'] . "</td>";
                             echo "<td>" . $row['genero'] . "</td>";
                             echo "<td> <i style='color:#EEA236; padding:1rem'class='bi bi-star-fill'></i>". $row["nota"] . "</td>";
-                            echo "<td > <img src='figuras/$id.jpg' style='width: 25%; height: 25%'> </td>";
-                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger btn-lg' role='button'> Votar </a>
+                            echo "<td> <img src='figuras/$id.jpg' style='width: 200px; height: 200px'> </td>";
+                            echo "<td><a href='inc_votos.php?id=$id'  class='btn btn-danger' role='button'> Votar </a>
                           </td></tr>";
                         }
                     } else {
