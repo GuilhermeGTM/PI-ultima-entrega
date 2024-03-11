@@ -2,7 +2,7 @@
 
 <?php
 include 'inc_titulopg.php';
-
+include 'inc_menupg.php';
 
 include 'inc_conecta.php';
 

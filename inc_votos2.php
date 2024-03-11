@@ -1,6 +1,6 @@
 <?php
 include 'inc_titulopg.php';
-
+include 'inc_menupg.php';
 ?>
 
 <div class="col-sm-9">
